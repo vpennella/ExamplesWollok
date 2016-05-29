@@ -1,0 +1,15 @@
+import jose.*
+import huevoKinder.*
+import huevoReposteria.*
+test "no se puede Enfermar" {
+	jose.agregarHuevo(huevoKinder)
+	jose.agregarHuevo(huevoReposteria)
+	assert.notThat(jose.sePuedeEnfermar())
+
+}
+
+test "total calorias huevos" {
+	jose.agregarHuevo(huevoKinder)
+	assert.equals(900, jose.totalCaloriasHuevos2())
+}
+

@@ -1,0 +1,9 @@
+import huevoKinder.*
+import tito.*
+import conejoChocolate.*
+
+test "no se puede Enfermar" {
+	tito.agregarHuevo(conejoChocolate)
+	assert.notThat(tito.sePuedeEnfermar())
+
+}

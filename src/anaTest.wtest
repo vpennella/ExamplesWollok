@@ -1,0 +1,16 @@
+import ana.*
+import huevoKinder.*
+import huevoReposteria.*
+
+test "se puede Enfermar ana" {
+    
+    ana.agregarHuevo(huevoKinder)
+    ana.agregarHuevo(huevoReposteria)
+	assert.that(ana.seVaAEnfermar())
+
+}
+
+test "ana no se puede Enfermar" {
+
+	assert.notThat(ana.seVaAEnfermar())
+}
